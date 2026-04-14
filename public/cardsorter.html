@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cora's Colors | Card Sorter</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/navScript.js"></script>
+</head>
+<body>
+    <div w3-include-html="nav.html"></div>
+    <div class="container">
+        <div class="row mt-3">
+            <h1 class="display-1 text-center border-bottom mb-4">Card Sorter</h1>
+        </div>
+        <script src="scripts/arrayNeeded.js"></script> 
+        <script src="scripts/arrayTrading.js"></script> 
+        <script src="scripts/cardSorter.js"></script>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <p class="mb-0">Enter <span class="fw-bold text-warning">your needed list</span> separated by commas:</p>                
+                <textarea id="input-needed" class="w-100" type="text" style="height:150px" ></textarea>
+                <br>
+                <button class="btn btn-outline-warning mt-3 mb-3" onclick="genNeededList()" class="mb-3">Sort Cards</button>
+            </div>
+            <div class="col-lg-6">
+                Cards you need from MY trade pile: <span id="needed-card-count"></span>
+                <textarea id="show-needed" class="w-100" type="text" style="height:150px" ></textarea>
+            </div>   
+        </div>
+        <hr>
+        <div class="row mt-3">  
+            <div class="col-lg-6">
+                <p class="mb-0">Enter <span class="fw-bold text-warning">your trading list</span> separated by commas:</p>                
+                <textarea id="input-trading" class="w-100" type="text" style="height:150px" ></textarea>
+                <br>
+                <button class="btn btn-outline-warning mt-3 mb-3" onclick="genTradingList()" class="mb-3">Sort Cards</button>
+            </div>
+            <div class="col-lg-6">
+                Cards I need from YOUR trade pile: <span id="trading-card-count"></span>
+                <textarea id="show-trading" class="w-100" type="text" style="height:150px" ></textarea>
+            </div>
+        </div>        
+    </div>
+<script>includeHTML();</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

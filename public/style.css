@@ -1,0 +1,134 @@
+:root {
+    --color-main: rgb(241, 129, 129);
+    --color-red: rgb(196, 72, 72);
+    --color-orange: rgb(214, 125, 74);
+    --color-yellow: rgb(206, 181, 41);
+    --color-green: rgb(84, 173, 81);
+    --color-blue: rgb(67, 163, 187);
+    --color-purple: rgb(180, 93, 197);
+    --color-brown: rgb(109, 82, 66);
+    --color-black: rgb(114, 108, 117);
+}
+
+body {
+    background-image: url("img/stardust.png") !important;
+    background-color: rgb(29, 36, 58);
+    font-family: Quicksand, sans-serif;
+}
+
+.display-1 {
+    font-weight: bold;
+}
+
+h1, .h1 {
+    font-size: 1.75rem;
+}
+
+h2, .h2 {
+    font-size: 1.5rem;
+}
+
+p, .p {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--color-main);
+}
+
+a:hover {
+    color: rgb(96, 188, 224);
+}
+
+.small-text {
+    font-size: 0.9rem;
+}
+
+
+.tiny-text {
+    font-size: 0.7rem;
+}
+
+.nav-bg {
+   background-image: linear-gradient(to right, 
+    var(--color-red) 0%, 
+    var(--color-orange) 19%, 
+    var(--color-yellow) 32%, 
+    var(--color-green) 42%, 
+    var(--color-blue) 79%, 
+    var(--color-purple) 100%);
+}
+
+.nav-link {
+    color: rgb(29, 36, 58);
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.dropdown-item:hover, .list-group-item, .img-thumbnail {
+    background-color: rgb(29, 36, 58);
+}
+
+.tab-link {
+    color: var(--color-main);
+}
+
+.card, .dropdown-menu, textarea {
+    background-color: rgb(47, 59, 91);
+}
+
+.table {
+  --bs-table-bg: var(--bs-body-bg-rgb) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-main);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-blue);
+}
+
+.badge-bg-red {
+    background-color: var(--color-red);
+}
+
+.badge-bg-orange {
+    background-color: var(--color-orange);
+}
+
+.badge-bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+.badge-bg-green {
+    background-color: var(--color-green);
+}
+
+.badge-bg-blue {
+    background-color: var(--color-blue);
+}
+
+.badge-bg-purple {
+    background-color: var(--color-purple);
+}
+
+.badge-bg-brown {
+    background-color: var(--color-brown);
+}
+
+.badge-bg-gray {
+    background-color: var(--color-black);
+}
+
+.badge-bg-special {
+    background-image: linear-gradient(to right, var(--color-red) 25%, var(--color-blue) 100%);
+}
+
+.img-thumbnail {
+    border-color: white;
+}

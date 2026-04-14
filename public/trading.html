@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cora's Colors | Trading</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="scripts/navScript.js"></script>
+</head>
+<body>
+    <div w3-include-html="nav.html"></div>
+    <div class="container">
+        <div class="row mt-3">
+            <h1 class="display-1 text-center border-bottom mb-4">Trading</h1>
+            <div class="col">
+                <a href="https://corafish.dreamwidth.org/372.html"><button type="button" class="btn btn-primary w-100 mb-3"><h1>My Trade Post!</h1></button></a>
+                <h1>Pending (<span id="pending-count"></span> cards)</h1>
+                <p class="tiny-text" id="pending-list"></p>
+            </div>
+        </div>
+        <hr>
+        <!--CARD IMAGE DISPLAY-->
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="display-4 text-center">Trade Pile (<span id="count"></span> cards)</h1>
+                <p class="fst-italic text-center">Click the buttons below to show the card images sorted by letter. Or <a href="#tradepile-text">jump to the text version</a>!</p>
+                <p class="text-center">
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListNum">0-9</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListA">A</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListB">B</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListC">C</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListD">D</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListE">E</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListF">F</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListG">G</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListH">H</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListI">I</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListJ">J</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListK">K</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListL">L</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListM">M</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListN">N</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListO">O</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListP">P</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListQ">Q</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListR">R</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListS">S</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListT">T</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListU">U</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListV">V</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListW">W</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListX">X</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListY">Y</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListZ">Z</button>
+                </p>
+                <p class="text-center" id="abc-card-list"></p>
+            </div>
+        </div>
+        <hr>
+        <!--CARD TEXT LIST-->
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="display-4 text-center" id="tradepile-text">Trade Pile (as text)</h1>
+                <div class="card mt-1 mb-3">
+                    <div class="card-body pb-0">
+                        <textarea class="tiny-text mx-auto d-block mb-3" id="textarea-text-list" style="width: 300px; border: 1px solid white;"></textarea>              
+                        <p id="text-list" class="tiny-text"></p>       
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+<script src="scripts/arrayTrading.js"></script>
+<script src="scripts/tradingScript.js"></script>
+<script>includeHTML();</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cora's Colors | Code Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-lg-12">
+                <h1 class="fw-bold">My HTML Generator</h1>
+                <h2>Deck: <span id="deck-name" class="text-warning"></span> <span id="deck-link"></span></h2>
+                <p id="card-display"></p>
+                <textarea id="generated-HTML" class="w-100 custom-bg" style="height: 700px;"></textarea>
+                <script>
+                    let deckName, cardDisplay, deckLink, isoHTML, cardPlaceholderHTML, cardListHTML;
+                    // Update deckName
+                    deckName = "admonisher";
+                    cardDisplay = `
+                    <img src="https://colors-tcg.eu/cards/${deckName}00.gif" alt="${deckName}00">
+                    <img src="https://colors-tcg.eu/cards/${deckName}01.gif" alt="${deckName}01">
+                    <img src="https://colors-tcg.eu/cards/${deckName}02.gif" alt="${deckName}02">
+                    <img src="https://colors-tcg.eu/cards/${deckName}03.gif" alt="${deckName}03">
+                    <img src="https://colors-tcg.eu/cards/${deckName}04.gif" alt="${deckName}04">
+                    <img src="https://colors-tcg.eu/cards/${deckName}05.gif" alt="${deckName}05">
+                    <img src="https://colors-tcg.eu/cards/${deckName}06.gif" alt="${deckName}06">
+                    <img src="https://colors-tcg.eu/cards/${deckName}07.gif" alt="${deckName}07">
+                    <img src="https://colors-tcg.eu/cards/${deckName}08.gif" alt="${deckName}08">
+                    <img src="https://colors-tcg.eu/cards/${deckName}09.gif" alt="${deckName}09">
+                    <img src="https://colors-tcg.eu/cards/${deckName}10.gif" alt="${deckName}10">
+                    <img src="https://colors-tcg.eu/cards/${deckName}11.gif" alt="${deckName}11">
+                    <img src="https://colors-tcg.eu/cards/${deckName}12.gif" alt="${deckName}12">
+                    <img src="https://colors-tcg.eu/cards/${deckName}13.gif" alt="${deckName}13">
+                    <img src="https://colors-tcg.eu/cards/${deckName}14.gif" alt="${deckName}14">
+                    <img src="https://colors-tcg.eu/cards/${deckName}15.gif" alt="${deckName}15">
+                    <img src="https://colors-tcg.eu/cards/${deckName}16.gif" alt="${deckName}16">
+                    <img src="https://colors-tcg.eu/cards/${deckName}17.gif" alt="${deckName}17">
+                    <img src="https://colors-tcg.eu/cards/${deckName}18.gif" alt="${deckName}18">
+                    <img src="https://colors-tcg.eu/cards/${deckName}19.gif" alt="${deckName}19">
+                    <img src="https://colors-tcg.eu/cards/${deckName}20.gif" alt="${deckName}20">`;
+                    deckLink = `<a href="https://colors-tcg.eu/viewcards.php?deck=${deckName}" target="_blank">Colors TCG Link</a>`;
+                    isoHTML = `<!--ISO:${deckName}-->${deckName}01, ${deckName}02, ${deckName}03, ${deckName}04, ${deckName}05, ${deckName}06, ${deckName}07, ${deckName}08, ${deckName}09, ${deckName}10, ${deckName}11, ${deckName}12, ${deckName}13, ${deckName}14, ${deckName}15, ${deckName}16, ${deckName}17, ${deckName}18, ${deckName}19, ${deckName}20,`;
+                    cardPlaceholderHTML = `\n\n<img src="https://colors-tcg.eu/cards/${deckName}00.gif" class="mb-1" alt="${deckName}00" loading="lazy">`;
+                    cardListHTML = `\n\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}01" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}02" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}03" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}04" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}05" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}06" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}07" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}08" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}09" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}10" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}11" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}12" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}13" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}14" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}15" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}16" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}17" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}18" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}19" loading="lazy">\n<img src="cards/${deckName}00.gif" class="mb-1" alt="${deckName}20" loading="lazy">\n`;
+                    document.getElementById("deck-name").innerHTML = deckName;
+                    document.getElementById("card-display").innerHTML = cardDisplay;
+                    document.getElementById("deck-link").innerHTML = deckLink;
+                    document.getElementById("generated-HTML").innerHTML = isoHTML + cardPlaceholderHTML + cardListHTML;
+                </script>
+                <h2>Decks to add to ISO list:</h2>
+                <p>
+                    ...
+                </p>
+                <hr>
+                <div>
+                    <h1>Modified <a href="https://colors.koinuko.pink/">Koinuko's</a> Colors TCG Auto-IMG Tool</h1>
+                    <p>Enter card names below separated by commas:</p>                
+                    <textarea id="cardnames" class="w-100" type="text" style="height:200px" ></textarea>
+                    <br>
+                    <button onclick="getEnteredCards()" id="entercards">Generate IMG tags</button>                
+                    <p id="numberofcards">Number of cards:</p>                
+                    <p>IMG tags (hotlinked copies):</p>
+                    <textarea id="imgtags" class="w-100" style="height:200px"></textarea>
+                    <br>
+                    <p>Card images (scraped from colors-tcg.eu):</p>
+                    <p id="cardimages"></p>                
+                </div>
+                <script>
+                    function getEnteredCards() {
+                        let enteredCardNames = document.getElementById("cardnames").value;
+                        enteredCardNames = enteredCardNames.replaceAll(' ', "");
+                        let enteredCardArray = enteredCardNames.split(',');
+                        //enteredCardArray.sort();
+                        let howManyCards = enteredCardArray.length;
+                        let prefix = '<img src="https://colors-tcg.eu/cards/';
+                        let middle = '.gif" alt="';
+                        let suffix = '">';
+                        let prefixColors = '<img src="https://colors-tcg.eu/cards/';
+                        let suffixColors = '.gif" loading="lazy">';
+                        let newArr = enteredCardArray.map(el => prefix + el + middle + el + suffix);
+
+                        let imageArray = enteredCardArray.slice();
+                        let imageArray2 = imageArray.map(el => prefixColors + el + suffixColors);                                         
+                        
+                        document.getElementById('imgtags').textContent = newArr.join('');
+                        document.getElementById('imgtags').textContent.replaceAll(',', " ")
+                        document.getElementById('cardimages').innerHTML = imageArray2.join('');
+                        document.getElementById('numberofcards').innerHTML = "Number of cards: " + imageArray2.length;
+                        }   
+                </script>
+                <hr>
+                <div>
+                    <h1>Reformat Card List</h1>
+                    <p>Enter card names below separated by commas:</p>                
+                    <textarea id="cardcommas" class="w-100" type="text" style="height:200px" ></textarea>
+                    <br>
+                    <button onclick="genArrayList()" class="mb-3">Reformat List</button>                           
+                    <p>New List:</p>
+                    <textarea id="newlist" class="w-100" style="height:200px"></textarea>        
+                </div>
+                <script>
+                    function genArrayList() {
+                        let listCards = document.getElementById("cardcommas").value;
+                        listCards = listCards.replaceAll(' ', '');
+                        let enteredCardArray = listCards.split(',');
+                        //enteredCardArray.sort();
+                        let prefix = '"';
+                        let suffix = '"';
+                        let newArr = enteredCardArray.map(el => prefix + el + suffix);                                  
+                        
+                        document.getElementById('newlist').textContent = newArr.join(', ');
+                        }   
+                </script>
+                <hr>
+<h1>Pot of Gold Template</h1>
+<span style="font-size: 12px;">
+<p>Cora &#10022; <a href="https://corafish-tcg.neocities.org/">Card Post</a> &#10022; Grand Prize A or B &#10022; Early rewards are welcome!</p>
+<p style="border-bottom: 3px solid hotpink;"><b>Red: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid salmon;"><b>Orange: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid gold;"><b>Yellow: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid palegreen;"><b>Green: In Progress</b> | Task</p> 
+<p style="border-bottom: 3px solid turquoise;"><b>Blue: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid mediumpurple;"><b>Purple: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid rosybrown;"><b>Brown: In Progress</b> | Task</p>
+<p style="border-bottom: 3px solid silver;"><b>Gray: In Progress</b> | Task</p>
+</span>
+<span style="color: hotpink; font-size: 20px;">&#9825; &#9825; &#9825;</span>
+            </div>
+        </div>
+    </div>
+<script src="scripts/myCardsScript.js"></script>    
+</body>
+</html>
