@@ -22,7 +22,7 @@
         <!--MENU-->
         <div class="row mt-3">
             <p class="text-center">
-            Jump to: <a href="#expand">Expand Deck</a> &bull; <a href="#alphabetize">Alphabetize Card List + Card Counter</a> &bull; <a href="#array">Reformat for JS</a> &bull; <a href="#autoimg">Auto-IMG</a> &bull; <a href="#pog">POG Template</a>
+            Jump to: <a href="#expand">Expand Deck</a> &bull; <a href="#alphabetize">Alphabetize Card List + Card Counter</a> &bull;  <a href="#remove-dupes">Remove Duplicates</a> <span class="badge rounded-pill text-bg-light">new!</span> &bull; <a href="#array">Reformat for JS</a> &bull; <a href="#autoimg">Auto-IMG</a> &bull; <a href="#pog">POG Template</a>
             </p>
         </div>
         <hr>
@@ -55,6 +55,26 @@
                     </div>
                 </div>
                 <script src="scripts/genArrayList.js"></script>
+                <hr>        
+            </div>
+            <!--REMOVE DUPES-->
+            <div class="col-12">
+                <h1 class="display-4" id="remove-dupes">Remove Duplicate Cards from List</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="mb-0">Enter card names below separated by commas:</p>                
+                        <textarea id="dupes-list" class="w-100" type="text" style="height:250px" ></textarea>
+                        <br>
+                        <button class="btn btn-outline-warning mt-3" onclick="removeDupes()" class="mb-3">Remove Duplicates</button>
+                    </div>
+                    <div class="col-lg-6">                         
+                        <p class="mb-0">New List: <span id="dupe-final-card-count"></span></p>
+                        <textarea id="dupes-removed-list" class="w-100 mb-3" style="height:150px"></textarea>
+                        <p class="mb-0">Duplicates: <span id="dupe-cards-count"></span></p>
+                        <textarea id="dupe-cards" class="w-100" style="height:100px"></textarea>
+                    </div>
+                </div>
+                <script src="scripts/removeDupes.js"></script>
                 <hr>        
             </div>
             <!--REFORMAT LIST-->

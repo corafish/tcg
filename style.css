@@ -13,7 +13,7 @@
 body {
     background-image: url("img/stardust.png") !important;
     background-color: rgb(29, 36, 58);
-    font-family: Quicksand, sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .display-1 {
@@ -47,6 +47,7 @@ a:hover {
 
 .tiny-text {
     font-size: 0.7rem;
+    font-family: "Quicksand", sans-serif;
 }
 
 .nav-bg {
