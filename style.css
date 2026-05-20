@@ -7,7 +7,7 @@
     --color-blue: rgb(67, 163, 187);
     --color-purple: rgb(180, 93, 197);
     --color-brown: rgb(109, 82, 66);
-    --color-black: rgb(114, 108, 117);
+    --color-gray: rgb(114, 108, 117);
 }
 
 body {
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .badge-bg-gray {
-    background-color: var(--color-black);
+    background-color: var(--color-gray);
 }
 
 .badge-bg-special {
