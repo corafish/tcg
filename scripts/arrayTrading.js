@@ -11,8 +11,6 @@ const cardsPending = [
   "small02", "sniff16",
   // release roulette 084
   "gunpla03", "cafenagi16", "onmyouji10", "kabukidance13", "dynasoldier16", "carsick20", "quinx12", "thebomb12", "scissors13", "mandragora04",
-  // trade: jelliebean
-  "crownsguard19", "excalipoor13", "grandmaster11", "grandmaster19", "hardmode03", "hermusic17", "laureley06", "meyvn01", "moogles17", "shiden01", "shifu12",
   // memory lane 025
   "unit19", "stomach16",
   // silly blanks 320

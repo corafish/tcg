@@ -3,6 +3,5 @@ const cardsNeeded = [
 ];
 
 const cardsNeededPending = [
-    // trade: jelliebean
-    "atelier10", "eyerolls09", "ito01", "ito03", "ito10", "nosy12", "nosy19", "oar11", "referee04", "seamstress06", "seamstress20",
+
 ]
