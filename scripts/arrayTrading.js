@@ -5,6 +5,4 @@ const cardsTrading = [
 const cardsPending = [
  // release roulette 088
  "hotsprings16", "izumo20", "jikochuu13", "kenpo09", "kozukioden13", "loyalundead15", "onee-sama11", "onee-sama19", "pompous08", "prospero20",
- // switch it up
- "hellguide03", "alloflove19", "journalist07", "eyemask16", "beautyblade01", "chosen06", "helicotapuu05",
 ]
