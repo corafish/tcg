@@ -1,35 +1,44 @@
 :root {
-    --color-main: rgb(241, 129, 129);
-    --color-red: rgb(196, 72, 72);
-    --color-orange: rgb(214, 125, 74);
-    --color-yellow: rgb(206, 181, 41);
-    --color-green: rgb(84, 173, 81);
-    --color-blue: rgb(67, 163, 187);
-    --color-purple: rgb(180, 93, 197);
-    --color-brown: rgb(109, 82, 66);
-    --color-gray: rgb(114, 108, 117);
+    --color-main: rgb(211, 84, 124);
+    --color-red: rgb(219, 81, 104);
+    --color-orange: rgb(248, 139, 93);
+    --color-yellow: rgb(230, 191, 16);
+    --color-green: rgb(64, 203, 127);
+    --color-blue: rgb(15, 176, 229);
+    --color-purple: rgb(153, 47, 224);
+    --color-brown: rgb(130, 99, 96);
+    --color-gray: rgb(108, 115, 118);
+    --color-black: rgb(42, 41, 43);
 }
 
 body {
-    background-image: url("img/stardust.png") !important;
-    background-color: rgb(29, 36, 58);
-    font-family: "Quicksand", sans-serif;
+    background-image: url("img/grid_paper.png") !important;
+    background-color: white;
+    font-family: "Courier Prime", monospace;
 }
 
 .display-1 {
     font-weight: bold;
+    font-family: "Jersey 25", sans-serif;
 }
 
 h1, .h1 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
+    font-family: "Jersey 25", sans-serif;
 }
 
 h2, .h2 {
+    font-size: 1.75rem;
+    font-family: "Jersey 25", sans-serif;
+}
+
+h3, .h3, .card-title {
     font-size: 1.5rem;
+    font-family: "Jersey 25", sans-serif;
 }
 
 p, .p {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 a {
@@ -37,52 +46,61 @@ a {
 }
 
 a:hover {
-    color: rgb(96, 188, 224);
+    color: var(--color-blue);
 }
 
 .small-text {
     font-size: 0.9rem;
 }
 
-
 .tiny-text {
     font-size: 0.7rem;
-    font-family: "Quicksand", sans-serif;
+}
+
+.highlight-emphasis {
+    background-color: rgb(234, 255, 47);
 }
 
 .nav-bg {
-   background-image: linear-gradient(to right, 
-    var(--color-red) 0%, 
-    var(--color-orange) 19%, 
-    var(--color-yellow) 32%, 
-    var(--color-green) 42%, 
-    var(--color-blue) 79%, 
-    var(--color-purple) 100%);
+   background-color: var(--color-main)
 }
 
 .nav-link {
-    color: rgb(29, 36, 58);
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Jersey 25", sans-serif;
+    color: white;
+    text-transform: lowercase;
 }
 
 .nav-link:hover {
-    color: white;
+    color: var(--color-black);
 }
 
-.dropdown-item:hover, .list-group-item, .img-thumbnail {
-    background-color: rgb(29, 36, 58);
-}
+.dropdown-item:hover, .img-thumbnail {
+    background-color: white;
+} 
 
 .tab-link {
     color: var(--color-main);
 }
 
-.card, .dropdown-menu, textarea {
-    background-color: rgb(47, 59, 91);
+.card, .dropdown-menu, .list-group {
+    background-color: white;
+    border: 1px solid black;
+}
+
+textarea {
+    background-color: rgb(255, 192, 212);
 }
 
 .table {
   --bs-table-bg: var(--bs-body-bg-rgb) !important;
+}
+
+hr {
+    color: white;
+    border-bottom: 3px solid var(--color-main);
+    opacity: 100;
 }
 
 .btn-primary {
@@ -92,6 +110,10 @@ a:hover {
 
 .btn-primary:hover {
     background-color: var(--color-blue);
+}
+
+.badge {
+    font-family: "Courier Prime", monospace;
 }
 
 .badge-bg-red {
@@ -126,10 +148,20 @@ a:hover {
     background-color: var(--color-gray);
 }
 
+.badge-bg-black {
+    background-color: var(--color-black);
+}
+
 .badge-bg-special {
     background-image: linear-gradient(to right, var(--color-red) 25%, var(--color-blue) 100%);
 }
 
-.img-thumbnail {
-    border-color: white;
+.bg-rainbow {
+    background-image: linear-gradient(to right, 
+    var(--color-red) 0%, 
+    var(--color-orange) 19%, 
+    var(--color-yellow) 32%, 
+    var(--color-green) 42%, 
+    var(--color-blue) 79%, 
+    var(--color-purple) 100%);
 }

@@ -16,5 +16,5 @@ function getEnteredCards() {
     document.getElementById('imgtags').textContent = newArr.join('');
     document.getElementById('imgtags').textContent.replaceAll(',', ' ')
     document.getElementById('cardimages').innerHTML = imageArray2.join('');
-    document.getElementById('numberofcards').innerHTML = '<span class="badge rounded-pill text-bg-light">' + imageArray2.length + ' cards</span>';
+    document.getElementById('numberofcards').innerHTML = '<span class="badge rounded-pill badge-bg-black">' + imageArray2.length + ' cards</span>';
     }
