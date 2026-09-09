@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>˚་⁺₊⟡ cora's colors ⟡₊⁺་˚ | saving</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon2.gif">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/navScript.js"></script>
+</head>
+<body>
+    <h1 class="display-1 text-center mt-5 mb-0" style="color: var(--color-main)">
+        <span class="display-5">˚་⁺₊⟡</span>
+        cora's colors 
+        <span class="display-5">⟡₊⁺་˚</span>
+    </h1>
+    <div w3-include-html="nav.html"></div> 
+    <div class="container">
+        <div class="row mt-3">
+            <h1 class="display-1 text-center">Keeping</h1>
+        </div>
+        <!--CARD IMAGE DISPLAY-->
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="display-4 text-center">For Future Decks (<span id="count"></span> cards)</h1>
+                <p class="fst-italic text-center">Click the buttons below to show the card images sorted by letter. Or <a href="#saving-text">jump to the text version</a>!</p>
+                <p class="text-center">
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListNum">0-9</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListA">A</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListB">B</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListC">C</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListD">D</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListE">E</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListF">F</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListG">G</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListH">H</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListI">I</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListJ">J</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListK">K</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListL">L</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListM">M</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListN">N</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListO">O</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListP">P</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListQ">Q</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListR">R</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListS">S</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListT">T</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListU">U</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListV">V</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListW">W</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListX">X</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListY">Y</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListZ">Z</button>
+                </p>
+                <p class="text-center" id="abc-card-list"></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="display-4 text-center" id="saving-text">For Future Decks (as text)</h1>
+                <div class="card mt-1 mb-3">
+                    <div class="card-body pb-0">
+                        <textarea class="tiny-text mx-auto d-block mb-3" id="textarea-text-list" style="width: 400px; height: 70px; border: 1px solid black;"></textarea>
+                        <p id="text-list" class="tiny-text"></p>       
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+<script src="scripts/arraySaving.js"></script>
+<script src="scripts/savingScript.js"></script>
+<script>includeHTML();</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

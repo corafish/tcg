@@ -6,7 +6,7 @@ function genTradingList() {
     const intersectionTrading = enteredTradingArray.filter(element => cardsNeeded.includes(element));
     document.getElementById('show-trading').innerHTML = intersectionTrading.join(', ');
     if (intersectionTrading.length === 0) { document.getElementById('show-trading').innerHTML = 'No cards needed. :(' };
-    document.getElementById('trading-card-count').innerHTML = '<span class="badge rounded-pill text-bg-light">' + intersectionTrading.length + ' cards</span>';
+    document.getElementById('trading-card-count').innerHTML = '<span class="badge rounded-pill badge-bg-black">' + intersectionTrading.length + ' cards</span>';
     } 
 
 function genNeededList() {
@@ -17,5 +17,5 @@ function genNeededList() {
     const intersectionNeeded = enteredNeededArray.filter(element => cardsTrading.includes(element));
     document.getElementById('show-needed').innerHTML = intersectionNeeded.join(', ');
     if (intersectionNeeded.length === 0) { document.getElementById('show-needed').innerHTML = 'No cards needed. :(' };
-    document.getElementById('needed-card-count').innerHTML = '<span class="badge rounded-pill text-bg-light">' + intersectionNeeded.length + ' cards</span>';
+    document.getElementById('needed-card-count').innerHTML = '<span class="badge rounded-pill badge-bg-black">' + intersectionNeeded.length + ' cards</span>';
     }  

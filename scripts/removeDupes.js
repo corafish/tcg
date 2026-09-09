@@ -16,7 +16,7 @@ function removeDupes() {
     let removeDupesArray = [...seen];
 
     document.getElementById('dupes-removed-list').textContent = removeDupesArray.join(', ');
-    document.getElementById('dupe-final-card-count').innerHTML = '<span class="badge rounded-pill text-bg-light">' + removeDupesArray.length + ' cards</span>';
+    document.getElementById('dupe-final-card-count').innerHTML = '<span class="badge rounded-pill badge-bg-black">' + removeDupesArray.length + ' cards</span>';
     document.getElementById('dupe-cards').innerHTML = duplicate.join(', ');
-    document.getElementById('dupe-cards-count').innerHTML = '<span class="badge rounded-pill text-bg-light">' + duplicate.length + ' cards</span>';
+    document.getElementById('dupe-cards-count').innerHTML = '<span class="badge rounded-pill badge-bg-black">' + duplicate.length + ' cards</span>';
 }   

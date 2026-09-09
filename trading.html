@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>˚་⁺₊⟡ cora's colors ⟡₊⁺་˚ | trading</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="img/favicon2.gif">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
@@ -24,8 +24,10 @@
     <div class="container">
         <div class="row mt-3">
             <h1 class="display-1 text-center">Trading</h1>
-            <div class="col">
-                <a href="https://corafish.dreamwidth.org/372.html"><button type="button" class="btn btn-primary w-100 mb-3"><h1>My Trade Post!</h1></button></a>
+            <div class="col-lg-4">
+                <a href="https://corafish.dreamwidth.org/372.html"><button type="button" class="btn btn-primary w-100 mb-3 h-100"><h1>My Trade Post!</h1></button></a>
+            </div>
+            <div class="col-lg">
                 <h1>Pending (<span id="pending-count"></span> cards)</h1>
                 <p class="tiny-text" id="pending-list"></p>
             </div>
@@ -37,33 +39,33 @@
                 <h1 class="display-4 text-center">Trade Pile (<span id="count"></span> cards)</h1>
                 <p class="fst-italic text-center">Click the buttons below to show the card images sorted by letter. Or <a href="#tradepile-text">jump to the text version</a>!</p>
                 <p class="text-center">
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListNum">0-9</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListA">A</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListB">B</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListC">C</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListD">D</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListE">E</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListF">F</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListG">G</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListH">H</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListI">I</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListJ">J</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListK">K</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListL">L</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListM">M</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListN">N</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListO">O</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListP">P</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListQ">Q</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListR">R</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListS">S</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListT">T</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListU">U</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListV">V</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListW">W</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListX">X</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListY">Y</button>
-                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = imageListZ">Z</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListNum">0-9</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListA">A</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListB">B</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListC">C</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListD">D</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListE">E</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListF">F</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListG">G</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListH">H</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListI">I</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListJ">J</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListK">K</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListL">L</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListM">M</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListN">N</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListO">O</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListP">P</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListQ">Q</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListR">R</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListS">S</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListT">T</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListU">U</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListV">V</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListW">W</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListX">X</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListY">Y</button>
+                    <button class="btn btn-primary mb-1" onclick="document.getElementById('abc-card-list').innerHTML = noCommaImageListZ">Z</button>
                 </p>
                 <p class="text-center" id="abc-card-list"></p>
             </div>

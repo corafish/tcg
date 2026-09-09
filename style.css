@@ -3,7 +3,7 @@
     --color-red: rgb(219, 81, 104);
     --color-orange: rgb(248, 139, 93);
     --color-yellow: rgb(230, 191, 16);
-    --color-green: rgb(64, 203, 127);
+    --color-green: rgb(63, 198, 124);
     --color-blue: rgb(15, 176, 229);
     --color-purple: rgb(153, 47, 224);
     --color-brown: rgb(130, 99, 96);
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .small-text {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .tiny-text {
